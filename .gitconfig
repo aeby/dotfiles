@@ -45,3 +45,6 @@
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
 [url "git@github.com:aeby/"]
   insteadOf = "git://github.com/aeby/"
+[user]
+	name = Reto Aebersold
+	email = aeby@atizo.com

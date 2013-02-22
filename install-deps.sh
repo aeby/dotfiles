@@ -12,7 +12,7 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 # https://github.com/isaacs/nave
 # needs npm, obviously.
 # TODO: I think i'd rather curl down the nave.sh, symlink it into /bin and use that for initial node install.
-npm install -g nave
+sudo npm install -g nave
 
 
 # https://github.com/rupa/z
@@ -25,20 +25,6 @@ chmod +x ~/code/z/z.sh
 
 # add this to the bash_profile file if it aint there.
 #   . ~/code/z/z.sh
-
-
-cd ~/code
-git clone git://github.com/dronir/SpotifyControl.git
-
-
-
-# my magic photobooth symlink -> dropbox. I love it.
-# first move Photo Booth folder out of Pictures
-# then start Photo Booth. It'll ask where to put the library.
-# put it in Dropbox/public
-
-# now you can record photobooth videos quickly and they upload to dropbox DURING RECORDING
-# then you grab public URL and send off your video message in a heartbeat.
 
 
 # for the c alias (syntax highlighted cat)
