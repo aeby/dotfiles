@@ -15,12 +15,6 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 npm install -g nave
 
 
-# homebrew!
-# you need the code CLI tools YOU FOOL.
-ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
-
-
-
 # https://github.com/rupa/z
 # z, oh how i love you
 mkdir -p ~/code/z
