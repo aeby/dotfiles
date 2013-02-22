@@ -35,3 +35,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -d "$HOME/bin" ] ; then
+  PATH="$PATH:$HOME/bin"
+fi
