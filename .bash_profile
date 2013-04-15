@@ -39,3 +39,20 @@ fi
 if [ -d "$HOME/bin" ] ; then
   PATH="$PATH:$HOME/bin"
 fi
+
+gitshortcuts=~/code/atizo-platform/scripts/git-shortcuts.rc
+test -f $gitshortcuts && source $gitshortcuts
+
+activate_virtualenv() {
+  if pwd | egrep -q 'code/.+'; then
+    virtualenv="`pwd | sed -r 's@^(.*code/[^/]+).*$@\1@'`-env/bin/activate"
+    test -f "$virtualenv" && source "$virtualenv"
+  else
+    type deactivate &>/dev/null && deactivate
+  fi
+}
+cd() {
+  builtin cd "$@"
+  activate_virtualenv
+}
+activate_virtualenv
