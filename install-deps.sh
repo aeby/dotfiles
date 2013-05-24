@@ -30,7 +30,5 @@ chmod +x ~/code/z/z.sh
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
 
-
-# chrome canary as default
-# on a mac you can set chrome canary as your default inside of Safari preferences :)
-
+# molokai theme for gnome terminal
+bash < <( curl https://raw.github.com/ChadSeibert/gnome-terminal-theme-molokai/master/setup.sh)
