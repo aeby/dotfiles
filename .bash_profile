@@ -56,3 +56,5 @@ cd() {
   activate_virtualenv
 }
 activate_virtualenv
+
+eval "$(grunt --completion=bash)"
